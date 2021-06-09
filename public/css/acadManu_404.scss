@@ -1,0 +1,59 @@
+// IMPORTS
+@import "variables"; // GENERIC SCSS VARIABLES
+@import "mixins"; // MIXINS
+// END IMPORTS
+
+// FILE INFO
+$file-name: "acadManu_404.css";
+
+// File Name
+$version: "1.0.1";
+
+// File Version
+$author-last-change: "rperez@dpicode.com";
+$organization: "Dpicode";
+
+// last person was modified the file
+$date-last-change: "12/02/2015 - 9:40";
+
+// last date was modified the file  
+// END FILE INFO
+
+/*!
+ * ================================================================================
+ * ================================================================================
+ * Document #{$file-name} revision #{$version} by #{$author-last-change} for #{$organization}
+ * Last Change #{$date-last-change}
+ * ================================================================================
+ * ================================================================================
+ * 
+ */
+
+/* START PAGE STYLES */
+
+/* Section 404 */
+
+
+.error-template {
+  padding: 55px 0 85px 0;
+  .text-in-bg {
+    position: relative;
+    margin: 0 0 25px 0;
+    h2 {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    .bigText {
+      display: block;
+      color: #e6e6e6;
+      font-weight: 700;
+      font-size: 250px;
+      line-height: 250px;
+    }
+  }
+}
+
+/* End Section 404 */

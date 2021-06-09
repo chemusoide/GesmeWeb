@@ -1,0 +1,284 @@
+/* ================================================================================== */
+/* ================================================================================== */
+/* admin-dpicode.css for admin dpicode.com */
+/* Created by dpicode 16/08/2015 */
+/* Last modification 16/03/2015 */
+/* ================================================================================== */
+/* ================================================================================== */
+
+.clear {
+  clear: both;
+}
+
+.loader-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  background: rgba(99, 99, 99, 0.48);
+}
+.loader-wrap .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  background-color: #ffffff;
+}
+
+.after-run .site-menubar-unfold .site-navbar .navbar-brand-logo {
+  display: none;
+}
+.after-run .site-menubar-fold .site-navbar .navbar-brand-logo {
+  display: block;
+}
+
+/*.site-menubar-footer>a {
+  width: 50%;
+}*/
+
+.modal-fill-in.in {
+  background: #FFFFFF;
+}
+
+
+.modal-sidebar {
+  display: block;
+}
+.modal-sidebar .modal-content {
+  background: #FFFFFF!important;
+}
+
+.edit-user-modal table tr td {
+  vertical-align: middle;
+  width: 50%;
+}
+.edit-user-modal table tr td .help-block {
+  margin: 0;
+}
+
+.site-navbar .navbar-header .navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.site-navbar .navbar-header {
+  color: #fff;
+  background-color: #2d3e50;
+  font-weight: 300;
+}
+.site-navbar .navbar-header .strong {
+  font-weight: 100;
+}
+
+.site-menu .site-menu-sub {
+  padding-left: 20px;
+}
+
+.dataTables_wrapper {
+  overflow-x: auto;
+}
+.dataTables_wrapper .row {
+  margin: 0;
+}
+
+td.actions a {
+  text-decoration: none;
+}
+
+.page-content-table .table>tbody>tr:hover>td {
+    background-color: #ededed;
+}
+
+#showPass .clave {
+  word-break: break-all;
+}
+
+.user-list-wrap .filters {
+  text-align: center;
+  background: #f5f5f5;
+  border: solid 1px #e4eaec;
+  padding: 20px;
+  margin: 0 15px;
+  margin-bottom: 20px;
+}
+.user-list-wrap .filters .filter-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+}
+.user-list-wrap .filters .filters-content {
+  margin-top: 25px;
+}
+.user-list-wrap .filters .checkbox-custom {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+
+.user-list tbody td {
+  vertical-align: middle!important;
+}
+.user-list tbody td img {
+  max-width: 50px;
+  width: 100%;
+}
+
+#tablaPagos a {
+  text-decoration: none;
+}
+
+.secciones-remius {}
+.secciones-remius .widget {
+  margin-bottom: 0;
+}
+.secciones-remius .widget .widget-title {
+  margin-bottom: 0;
+}
+
+/*==================================
+=            pagination            =
+==================================*/
+
+.pagination {
+  display: table;
+  text-align: center;
+  margin-left: -8px;
+}
+.pagination a,
+.pagination span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #428bca;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50% !important;
+  margin: 0 5px;
+}
+.pagination a:hover,
+.pagination span:hover {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.pagination span.current {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+/*=====  End of pagination  ======*/
+
+
+/* Estilos para imprimir */
+
+.print-element {
+  display: none;
+}
+
+@page {
+  size: A4;
+  margin: 40px;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    display: block;
+    margin: auto;
+  }
+  .page, .modal, footer, .site-navbar, .site-menubar {
+    display: none!important;
+  }
+  .print-element {
+    display: block;
+  }
+  /* Para la tabla del justificante de pago*/
+
+  table.justificante{
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  table.justificante td.page-wrap {
+    border: dashed 1px #444444;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+  }
+  table.justificante td.page-wrap .icon-scissor {
+    position: absolute;
+    bottom: -22px;
+    left: 20px;
+    background: #FFFFFF!important;
+    padding: 5px 10px;
+  }
+  table.justificante td.page-wrap .icon-scissor i {
+    font-size: 24px;
+    opacity: .5;
+  }
+  table.justificante td.page-wrap table {
+    width: 100%;
+  }
+  table.justificante td.page-wrap {
+    padding: 20px;
+  }
+  table.justificante td.page-wrap thead td {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #f5f5f5;
+  }
+  table.justificante td.page-wrap thead td:first-child {
+    text-align: left;
+  }
+  table.justificante td.page-wrap thead td:last-child {
+    text-align: right;
+  }
+  table.justificante td.page-wrap thead .numRecibo {
+    /*border-bottom: solid 1px #dddddd;*/
+    width: auto;
+    padding: 10px;
+    display: inline-block;
+  }
+  table.justificante td.page-wrap thead .logo img {
+    width: 150px;
+  }
+  table.justificante td.page-wrap table tbody .concepto div{
+    padding: 10px 0;
+  }
+  table.justificante td.page-wrap table tbody .concepto h2 {
+    margin-top: 0;
+  }
+  table.justificante td.page-wrap table tbody .concepto h2, table.justificante td.page-wrap table tbody .concepto h3 {
+    text-transform: uppercase;
+  }
+
+  table.justificante td.page-wrap table tbody .datosPago table td {
+    border-bottom: solid 1px #f5f5f5;
+    padding: 15px 0 5px;
+    text-align: left;
+    font-size: 16px;
+  }
+  table.justificante td.page-wrap table tbody .datosPago td strong {
+    margin-right: 10px;
+  }
+
+  table.justificante td.page-wrap table tfoot td {
+    vertical-align: bottom;
+    padding-top: 40px;
+    text-align: right;
+    color: #aaaaaa!important;
+  }
+
+  /* Fin Para la tabla del justificante de pago*/
+}
+
+/* Fin Estilos para imprimir 

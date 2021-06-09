@@ -1,0 +1,586 @@
+// IMPORTS
+@import "variables"; // GENERIC SCSS VARIABLES
+@import "mixins"; // MIXINS
+// END IMPORTS
+
+// FILE INFO
+$file-name: "acadManu_general.css";
+
+// File Name
+$version: "1.0.1";
+
+// File Version
+$author-last-change: "rperez@dpicode.com";
+$organization: "Dpicode";
+
+// last person was modified the file
+$date-last-change: "12/02/2015 - 9:40";
+
+// last date was modified the file  
+// END FILE INFO
+
+/*!
+ * ================================================================================
+ * ================================================================================
+ * Document #{$file-name} revision #{$version} by #{$author-last-change} for #{$organization}
+ * Last Change #{$date-last-change}
+ * ================================================================================
+ * ================================================================================
+ * 
+ */
+
+/* START PAGE STYLES */
+
+/* CSS for Extra large screens */
+
+// @media (min-width: 1600px) {
+//     .container {
+//         width: 1570px;
+//     }
+// }
+
+/* End CSS for Extra large screens */
+
+
+* {
+  @include box-sizing(border-box !important);
+  // @include border-radius(0 !important);
+}
+
+/* Links */
+a {
+  @include transition(all 0.2s ease-in-out);
+  color: $link-color;
+  &:focus {
+    @include transition(all 0.2s ease-in-out);
+    color: $white-color;
+  }
+  &:hover {
+    @include transition(all 0.2s ease-in-out);
+    color: $link-color-over;
+    text-decoration: none;
+  }
+}
+
+/* overwrite bootstrap buttons */
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include border-radius(4px!important);
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-link {
+  padding: 0;
+}
+ 
+.btn-primary {
+    background: $primary-color;
+    color: $white-color;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: $primary-color-over;
+}
+ 
+.btn-primary:active, .btn-primary.active, .btn-primary:active:hover, .btn-primary.active:hover {
+    background: $primary-color-over;
+    box-shadow: none;
+}
+ 
+.btn-black {
+    background: $black-color;
+    color: $grey-color;
+    font-weight: 500;
+    @include font-size(16px);
+}
+ 
+.btn-black:hover, .btn-black:focus, .btn-black:active, .btn-black.active, .open > .dropdown-toggle.btn-black {
+    background: $black-color-over;
+    color: $white-color;
+}
+ 
+.btn-black:active, .btn-black.active, .btn-black:active:hover, .btn-black.active:hover {
+    background: $black-color-over;
+    box-shadow: none;
+    color: $white-color;
+}
+
+.btn-white {
+    background: $white-color;
+    color: $text-color;
+    font-weight: 500;
+    @include font-size(16px);
+}
+ 
+.btn-white:hover, .btn-white:focus, .btn-white:active, .btn-white.active, .open > .dropdown-toggle.btn-white {
+    background: $black-color-over;
+    color: $white-color;
+}
+ 
+.btn-white:active, .btn-white.active, .btn-white:active:hover, .btn-white.active:hover {
+    background: $black-color-over;
+    box-shadow: none;
+    color: $white-color;
+}
+
+/* Outline buttons */
+.btn-outline {
+    background-color: transparent;
+}
+.btn-primary.btn-outline {
+  color: $primary-color;
+  border: solid 1px $primary-color;
+}
+.btn-primary.btn-outline:hover {
+    color: $white-color;
+    background: $primary-color-over;
+    border-color: $primary-color-over;
+}
+
+.btn-default.btn-outline {
+  color: $text-color;
+  border: solid 1px $text-color;
+}
+.btn-default.btn-outline:hover {
+    color: $white-color;
+    background: $text-color;
+    border-color: $text-color;
+}
+
+.btn-white.btn-outline {
+  color: $white-color;
+  border: solid 1px $white-color;
+}
+.btn-white.btn-outline:hover {
+    color: $text-color;
+    background: $white-color;
+    border-color: $white-color;
+}
+
+/* End Outline buttons */
+
+/* end overwrite bootstrap buttons */
+
+
+/* General styles */
+
+body {
+  font-family: $font-text;
+  @include font-size(14px);
+}
+
+.padding-0 { padding: 0!important; }
+.padding-top-0 { padding-top: 0!important; }
+
+.margin-top-10 { margin-top: 10px!important; }
+.margin-top-20 { margin-top: 20px!important; }
+.margin-top-30 { margin-top: 30px!important; }
+
+.margin-bottom-10 { margin-bottom: 10px!important; }
+.margin-bottom-20 { margin-bottom: 20px!important; }
+.margin-bottom-30 { margin-bottom: 30px!important; }
+
+img { width: 100%; }
+
+/* totop */
+#toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  padding: 17px !important;
+  /*box-shadow: 0px 3px 7px 0px $secondary-color!important;*/ }
+
+/* End totop */
+
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+  background-color: #000;
+  &.fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  &.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+    display: block;
+  }
+}
+
+/* Fin General styles */
+
+/* General styles for Sections */
+
+section {
+  padding: 120px 0 120px 0;
+  &.header {
+    background: #151619;
+    padding: 15px;
+  }
+  &.grey {
+    background-color: #f5f5f5;
+  }
+  &.white {
+    background-color: #white-color;
+  }
+  &.black {
+    background-color: #1a1d21;
+    color: $text-grey-color;
+  }
+  &.primary {
+    background-color: $primary-color;
+  }
+}
+
+/* End General styles for Sections */
+
+/* Header */
+
+#header {
+  position: relative;
+  .header-menu {
+    .logo {
+      background: url("/images/logo.png") no-repeat left center;
+      margin-top: 10px;
+      width: 270px;
+      height: 80px;
+      a {
+        //@include hide-text;
+        width: 100%;
+        height: 80px;
+        padding-left: 90px;
+        color: $grey-color;
+        span {
+          font-weight: 400;
+          @include font-size(14px);
+        }
+        strong {
+          display: block;
+          font-family: $font-logo;
+          text-transform: uppercase;          
+          font-weight: 400;
+          @include font-size(18px);
+          span {
+            @include font-size(18px);
+            font-weight: 700;
+          }
+        }
+      }
+      @include screen-small {
+        @include center-element;
+      }
+    }
+    .menu {
+      padding: 25px 0;
+      float: right;
+      .nav {
+        text-align: right;
+        li {
+          display: inline-block;
+          float: none;
+          a {
+            margin-left: 20px;
+            &.link {
+              padding: 0;
+              color: $grey-color;
+              font-weight: 300;
+              &:hover,&:focus {
+                background: none;
+                color: $white-color;
+              }
+              @include screen-medium {
+                @include font-size(16px);
+                margin-left: 10px;
+              }
+              @include screen-large {
+                @include font-size(18px);
+              }
+            }
+            &.btn {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      @include screen-small {
+        display: none;
+        width: 100%;
+        .nav {
+          padding: 20px 0px;
+          text-align: center;
+          margin: 0;
+          li {
+            display: inline-block;
+            margin: 10px 5px;
+            a {
+              padding: 30px 20px;
+              @include font-size(20px);
+              margin: 0;
+            }
+            &.btn-acceso-remius {
+              a {
+                padding: 20px;
+              }
+            }
+          }
+        }
+        &.small-screen-active {
+          display: block;
+          left: 0;
+          }
+      }
+      @include screen-x-small {
+        width: 100%;
+      }
+    }
+    .navbar-toggle {
+      // display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 9;
+      padding: 9px 10px;
+      margin-top: 8px;
+      margin-right: 15px;
+      margin-bottom: 8px;
+      color: $white-color;
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      @include transition (all, 500ms ease-in-out);
+      .icon-bar {
+        background: $white-color;
+        @include transition (all, 500ms ease-in-out);
+        position: relative;
+        &:nth-of-type(2) {
+          top: 1px;
+        }
+        &:nth-of-type(3) {
+          top: 2px;
+        }
+      }
+      &.active {
+        .icon-bar {
+          &:nth-of-type(1) {
+            top: 6px;
+            transform: rotate(45deg);
+          }
+          &:nth-of-type(2) {
+            background-color: transparent;
+          }
+          &:nth-of-type(3) {
+            top: -6px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.socialIcons {
+  *zoom: 1;
+  display: block;
+  margin: 0 0 0 -10px;
+  list-style: none;
+  &:before {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  &:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+    clear: both;
+  }
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  &.pull-right {
+    margin: 0 -10px 0 0;
+  }
+  > li {
+    float: left;
+    margin: 0 10px;
+    > a {
+      display: block;
+      font-size: 18px;
+      color: #7f7d82;
+      color: rgba(255, 255, 255, 0.4);
+      &:hover {
+        color: #ea623d;
+      }
+    }
+    i {
+      display: block;
+    }
+  }
+  &.bigIcons {
+    margin-left: -7px;
+    > li {
+      margin: 0 7px;
+      > a {
+        -webkit-transition: background 0.2s ease;
+        transition: background 0.2s ease;
+        -webkit-transition: background 0.2s ease ease-in-out 0.2s;
+        -moz-transition: background 0.2s ease ease-in-out 0.2s;
+        -o-transition: background 0.2s ease ease-in-out 0.2s;
+        transition: background 0.2s ease ease-in-out 0.2s;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        padding-top: 16px;
+        padding-right: 1px;
+        background: #bbb;
+        color: $white-color;
+        &:hover {
+          background: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/* End Header */
+
+footer {
+  background: #31363b;
+  padding: 40px 0;
+  color: $white-color;
+  text-align: center;
+  .top-footer {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    .footer .navbar-nav {
+      float: none;
+      li {
+        display: inline-block;
+        float: none;
+        @include screen-small {
+          width: 50%;
+          float: left;
+          margin-bottom: 5px;
+        }
+        a {
+          text-transform: none;
+          color: $white-color;
+          font-weight: 300;
+          padding: 0;
+          margin: 0 15px;
+          @include font-size(18px);
+          &:hover {
+            text-decoration: underline;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    @include font-size(14px);
+    font-weight: 300;
+    color: $grey-color;
+    .col-sm-8 {
+      text-align: left;
+      padding: 2px 0;
+    }
+    .social-links {
+      text-align: right;
+      float: none;
+      li {
+        float: none;
+        display: inline-block;
+        a {
+          padding: 0;
+          margin: 0 5px;
+          opacity: .8;
+          &:hover {
+            background: transparent;
+            opacity: 1;
+          }
+          img {
+            width: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideToLeft{
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes backSlideToLeft{
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes moveFromLeft{
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveToRight{
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(200%);
+    }
+}
+
+
+
+
+
+

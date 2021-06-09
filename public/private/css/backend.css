@@ -1,0 +1,143 @@
+/* ================================================================================== */
+/* ================================================================================== */
+/* new-styles-private.css for fisioterapiajesusbolivar.com */
+/* Created by dpicode 16/03/2015 */
+/* Last modification 16/03/2015 */
+/* ================================================================================== */
+/* ================================================================================== */
+
+/* Personal */
+
+#tbodyPersonal td {
+  vertical-align: middle;
+  text-align: center;
+}
+#tbodyPersonal .image {
+  max-width: 150px;
+  width: 100%;
+}
+#tbodyPersonal .image-wrap {
+  position: relative;
+}
+#tbodyPersonal .modificar-foto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 133px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 10px;
+  color: #FFF;
+  margin: 8px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#tbodyPersonal .modificar-foto:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+#tbodyPersonal .social-links span {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  text-decoration: none;
+  background: #CCC;
+  margin: 0 5px;
+}
+
+#tbodyPersonal .social-links span .fa {
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+}
+
+#tbodyPersonal .social-links span.twitter-icon {
+  background-color: #55acee;
+}
+#tbodyPersonal .social-links span.skype-icon {
+  background-color: #009EE5;
+}
+#tbodyPersonal .social-links span.facebook-icon {
+  background-color: #425E9A;
+}
+#tbodyPersonal .social-links span.linkedin-icon {
+  background-color: #0077B5;
+}
+
+/* End Personal */
+
+
+
+
+
+/* modal subir foto */
+
+.image-preview-input {
+    position: relative;
+  overflow: hidden;
+  margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+
+
+/* end modal subir foto */
+
+
+/* Páginas */
+
+.tabs-idiomas .tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  display: table;
+  width: 100%;
+}
+.tabs-idiomas .tab-content button {
+  margin-top: 20px;
+  float: right;
+}
+
+.video_url {
+  margin-top: 20px;
+}
+
+/* End Páginas */
+
+
+/* Blog */
+
+iframe.wysihtml5-sandbox {
+  height: 400px!important;
+}
+
+/* End Blog */
+
+
+/* 404 */
+
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+
+
+/* End 404 */

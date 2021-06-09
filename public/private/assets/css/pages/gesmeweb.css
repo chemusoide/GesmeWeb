@@ -1,0 +1,410 @@
+/* ================================================================================== */
+/* ================================================================================== */
+/* gesmeweb.css */
+/* ================================================================================== */
+/* ================================================================================== */
+
+
+
+
+
+body {
+  color: #444444;
+}
+
+.table {
+  color: #444444;
+}
+
+.form-control {
+  color: #444444;
+}
+
+.clear {
+  clear: both;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+.reportar-incidencia {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    /*float: left;
+    margin-left: 20px;*/
+    vertical-align: middle;
+    text-align: center;
+}
+.reportar-incidencia strong {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar-default .navbar-toolbar>li>a:hover {
+  background: #f5f5f5;
+}
+.navbar-default .navbar-toolbar>li>a .avatar, .navbar-default .navbar-toolbar>li>a i.icon {
+  margin-right: 5px;
+}
+
+.loader-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  background: rgba(99, 99, 99, 0.48);
+}
+.loader-wrap .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  background-color: #ffffff;
+}
+
+.after-run .site-menubar-unfold .site-navbar .navbar-brand-logo {
+  display: none;
+}
+.after-run .site-menubar-fold .site-navbar .navbar-brand-logo {
+  display: block;
+}
+
+/*.site-menubar-footer>a {
+  width: 50%;
+}*/
+
+.modal-fill-in.in {
+  background: #FFFFFF;
+}
+
+
+.modal-sidebar {
+  display: block;
+}
+.modal-sidebar .modal-content {
+  background: #FFFFFF!important;
+}
+
+.edit-user-modal table tr td {
+  vertical-align: middle;
+  width: 50%;
+}
+.edit-user-modal table tr td .help-block {
+  margin: 0;
+}
+
+.site-navbar .navbar-header .navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.site-navbar .navbar-header {
+  color: #fff;
+  background-color: #2d3e50;
+  font-weight: 300;
+}
+
+.after-run .site-menubar-fold .site-navbar .navbar-container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.after-run .site-menubar-unfold .site-navbar .navbar-container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.after-run .site-menubar-fold .site-menubar {
+  width: 0;
+  overflow: hidden;
+}
+
+.after-run .site-menubar-fold .page, .after-run .site-menubar-fold .site-footer {
+  margin-left: 0;
+}
+.site-navbar .navbar-header .strong {
+  font-weight: 100;
+}
+
+.site-menu .site-menu-sub {
+  padding-left: 20px;
+}
+
+.dataTables_wrapper {
+  overflow-x: auto;
+}
+.dataTables_wrapper .row {
+  margin: 0;
+}
+
+td.actions a {
+  text-decoration: none;
+}
+
+.page-content-table .table>tbody>tr:hover>td {
+    background-color: #ededed;
+}
+
+#showPass .clave {
+  word-break: break-all;
+}
+
+.user-list-wrap .filters {
+  text-align: center;
+  background: #f5f5f5;
+  border: solid 1px #e4eaec;
+  padding: 20px;
+  margin: 0 15px;
+  margin-bottom: 20px;
+}
+.user-list-wrap .filters .filter-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+}
+.user-list-wrap .filters .filters-content {
+  margin-top: 25px;
+}
+.user-list-wrap .filters .checkbox-custom {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+
+.historico-test tbody td {
+  vertical-align: middle!important;
+}
+.user-list tbody td {
+  vertical-align: middle!important;
+}
+.user-list tbody td img {
+  max-width: 50px;
+  width: 100%;
+}
+
+#tablaPagos a {
+  text-decoration: none;
+}
+
+.secciones-remius {}
+.secciones-remius .widget {
+  margin-bottom: 30px;
+}
+.secciones-remius .widget .widget-title {
+  margin-bottom: 0;
+}
+
+/*==================================
+=            pagination            =
+==================================*/
+
+.pagination {
+  display: table;
+  text-align: center;
+  margin: 10px 0!important;
+  margin-left: -8px!important;
+}
+.pagination .page-numbers {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #428bca;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50% !important;
+  margin: 0 5px;
+}
+.pagination .page-numbers:hover {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.pagination .page-numbers.current {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+/*=====  End of pagination  ======*/
+
+/*=========================================
+=            Responsive styles            =
+=========================================*/
+
+@media (min-width: 768px) { 
+  .site-navbar .navbar-header {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header-actions {
+    text-align: right;
+  }
+  .app-documents .category {
+    text-align: center;
+  }
+  .single-tema .actions-tema {
+    text-align: center !important;
+  }
+  .single-tema .actions-tema .btn {
+    width: 28%;
+    margin: 0 5px;
+    white-space: normal;
+  }
+  .preview-test {
+    width: 100%;
+  }
+  .preview-test .page-content {
+    padding: 0 20px;
+  }
+  .preview-test .page-content .counter-number-group {
+    text-align: center;
+  }
+
+  .head-preguntas .widget-article {
+
+  }
+  .head-preguntas.stick {
+    
+  }
+  .head-preguntas .couter-preguntas {
+    font-size: 12px;
+  }
+  .head-preguntas .btn-lg {
+    font-size: 14px;
+    white-space: normal;
+    padding: 5px 10px;
+  }
+  .head-preguntas .countdown-timer #countdown {
+    font-size: 16px;
+  }
+  .test-pregunta-wrap .test-pregunta-content {
+    width: 100%;
+  }
+  .test-pregunta-wrap .enunciado-pregunta {
+    font-size: 16px;
+  }
+  .test-pregunta-wrap .respuestas-pregunta-wrap {
+    padding: 20px;
+  }
+  .test-pregunta-actions .btn {
+    white-space: normal;
+  }
+  .preview-test .preview-wrap {
+    display: table;
+    width: 100%;
+  }
+  .preview-test .preview-wrap .col-xs-6 .widget-content {
+    padding: 10px !important;
+  }
+  .preview-test .preview-wrap .col-xs-6 .widget-content * {
+    text-align: center!important;
+  }
+}
+@media (max-width: 480px) {
+}
+
+/*=====  End of Responsive styles  ======*/
+
+
+
+/* Estilos para imprimir */
+
+.print-element {
+ /* display: none;*/
+}
+
+@page {
+  size: A4;
+  margin: 40px;
+}
+/*@media print {
+  html, body {
+    /*width: 210mm;
+    height: 297mm;*/
+    /*display: block;
+    margin: auto;*/
+   /* padding-top: 0px;
+  }**/
+ /* .page, .modal, footer, .site-navbar, .site-menubar {
+    display: none!important;
+  }*/
+  .print-element {
+    display: block;
+  }
+ 
+
+  /*=======================================
+  =            Imprimir historial            =
+  =======================================*/
+
+
+
+
+  
+  .print-historial { width: 95%; display: block; margin: auto; }
+  .print-historial .head-historial {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #CCCCCC;
+    display: table;
+    width: 100%;
+  }
+  .print-historial .head-historial .datosPaciente {
+    border-right: solid 1px #f5f5f5;
+  }
+  .print-historial .head-historial .datosPaciente .form-group {
+    margin-bottom: 0px;
+  }
+  .print-historial .head-historial .datosPaciente label {
+    display: inline-block;
+    width: 100%;
+  }
+  .print-historial .head-historial .datosCabecera {
+    text-align: center;
+  }
+
+  .print-historial .head-historial .datosCabecera .slogan {
+    width: 100%;
+    color: #f5f5f5;
+    font-size: 14px;
+  }
+  .print-historial .head-historial .datosCabecera strong {
+    width: 100%;
+    display: block;
+    text-transform: uppercase; 
+    font-size: 18px;
+  }
+  .print-historial .head-historial .datosCabecera strong span {
+    font-size: 18px;
+  }
+  .print-historial .head-historial .titlehistorial {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .print-historial .respuestas-pregunta-wrap {
+    padding-left: 20px;
+  }
+  .print-historial .respuestas-pregunta-wrap label {
+    font-size: 16px;
+  }
+  .print-historial .enunciado-pregunta {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  /*=====  End of Imprimir historial  ======*/
+      
+/*}*/
+
+/* Fin Estilos para imprimir */

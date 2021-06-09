@@ -1,0 +1,182 @@
+// IMPORTS
+@import "variables"; // GENERIC SCSS VARIABLES
+@import "mixins"; // MIXINS
+// END IMPORTS
+
+// FILE INFO
+$file-name: "acadManu_blog.css";
+
+// File Name
+$version: "1.0.1";
+
+// File Version
+$author-last-change: "rperez@dpicode.com";
+$organization: "Dpicode";
+
+// last person was modified the file
+$date-last-change: "3/03/2016 - 9:57";
+
+// last date was modified the file  
+// END FILE INFO
+
+/*!
+ * ================================================================================
+ * ================================================================================
+ * Document #{$file-name} revision #{$version} by #{$author-last-change} for #{$organization}
+ * Last Change #{$date-last-change}
+ * ================================================================================
+ * ================================================================================
+ * 
+ */
+
+/* START PAGE STYLES */
+
+#cover {
+  background: url("/images/bg-blog.jpg") no-repeat center center;
+  background-size: cover;
+  display: table;
+  width: 100%;
+  padding: 30px 0;
+  .cover-wrap {
+    margin-top: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    .cover-content {
+      color: $white-color;
+      text-align: left;
+      text-transform: uppercase;
+      vertical-align: middle;
+      h2 {
+        @include font-size(36px);
+        text-shadow: 1px 1px 5px #000000;
+        font-weight: 300;
+        margin-bottom: 10px;
+        display: block;
+        padding: 15px;
+        border-bottom: solid 1px $white-color;
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+/* End Header */
+
+#page {
+  padding: 80px 0;
+  .page-content {
+    background: $white-color;
+    .blog-post-list {
+      .blog-post {
+        padding-bottom: 45px;
+        margin-bottom: 45px;
+        border-bottom: 1px solid #e5e5e5;
+        display: table;
+        width: 100%;
+        .post-image {
+          margin-bottom: 25px;
+          img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .post-title {
+          font-weight: 500;
+          @include font-size(22px);
+          margin-top: 0;
+          margin-bottom: 2px;
+          text-transform: uppercase;
+        }
+        .post-date {
+          color: #666666;
+          @include font-size(12px);
+        }
+        .post-text {
+          @include font-size(16px);
+          text-align: justify;
+          p {
+            color: #666;
+            margin: 0 0 15px 0;
+          }
+        }
+        .post-actions {
+          text-align: left;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+      .pagination {
+        margin: 20px auto;
+        display: table;
+        li>a, li>span { 
+          border-radius: 4px !important;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+#remius-resume {
+  padding: 40px 0;
+  background-image: url("/images/bg-remius.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: auto;
+  position: relative;
+  -webkit-box-shadow: inset 0px 4px 7px -1px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 4px 7px -1px rgba(0,0,0,1);
+  box-shadow: inset 0px 4px 7px -1px rgba(0,0,0,1);
+  .content-remius {
+    text-align: center;
+    width: 100%;
+    color: $white-color;
+    display: table;
+    .remius-logo {
+      padding: 50px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: $font-logo;
+      @include font-size(60px);
+      @include screen-small {
+        border-bottom: solid 1px $text-grey-color;
+      }
+      @include screen-medium {
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px $text-grey-color;
+        float: none;
+      }
+      @include screen-large {
+        float: left;
+        width: 30%;
+        border: none;
+        border-right: solid 1px $text-grey-color;
+      }
+    }
+    .remius-info {
+      padding: 50px 30px;
+      @include font-size(18px);
+      line-height: 24px;
+      .remius-text {
+        margin-bottom: 30px;
+        text-align: justify center;
+      }
+      @include screen-medium {
+        width: 100%;
+        float: none;
+      }
+      @include screen-large {
+        float: left;
+        width: 70%;
+        border: none;
+      }
+    }
+  } 
+}
+
+/* End Section Hotels */

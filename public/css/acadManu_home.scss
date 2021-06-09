@@ -1,0 +1,392 @@
+// IMPORTS
+@import "variables"; // GENERIC SCSS VARIABLES
+@import "mixins"; // MIXINS
+// END IMPORTS
+
+// FILE INFO
+$file-name: "acadManu_home.css";
+
+// File Name
+$version: "1.0.1";
+
+// File Version
+$author-last-change: "rperez@dpicode.com";
+$organization: "Dpicode";
+
+// last person was modified the file
+$date-last-change: "12/02/2015 - 9:40";
+
+// last date was modified the file  
+// END FILE INFO
+
+/*!
+ * ================================================================================
+ * ================================================================================
+ * Document #{$file-name} revision #{$version} by #{$author-last-change} for #{$organization}
+ * Last Change #{$date-last-change}
+ * ================================================================================
+ * ================================================================================
+ * 
+ */
+
+/* START PAGE STYLES */
+
+/* Section home */
+
+#cover {
+  background: url("/images/bg-cover.jpg") no-repeat center center;
+  background-size: cover;
+  height: 650px;
+  .cover-wrap {
+    margin-top: 40px;
+    .cover-content {
+      color: $text-color;
+      text-transform: uppercase;
+      vertical-align: middle;
+      @include screen-small {
+        width: 100%;
+        text-align: center;
+      }
+      @include screen-medium {
+        width: 100%;
+        text-align: center;
+      }
+      @include screen-large {
+        width: 100%;
+        text-align: center;
+      }
+      h2 {
+        @include font-size(56px);
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      h3 {
+        @include font-size(26px);
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      .btn {
+        @include font-size(18px);
+        padding: 15px 25px;
+      }
+    }
+  }
+}
+
+#info-box-2 {
+  .title {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 400;
+    @include font-size(30px);
+    margin-bottom: 25px;
+    color: $white-color;
+  }
+  .text {
+    line-height: 24px;
+    margin-bottom: 25px;
+    @include font-size(16px);
+    text-align: justify;
+    a {
+      color: $white-color;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+#remius-resume {
+  background-image: url("/images/bg-remius.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 530px;
+  position: relative;
+  -webkit-box-shadow: inset 0px 4px 7px -1px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 4px 7px -1px rgba(0,0,0,1);
+  box-shadow: inset 0px 4px 7px -1px rgba(0,0,0,1);
+  .content-remius {
+    text-align: center;
+    width: 100%;
+    color: $white-color;
+    display: table;
+    .remius-logo {
+      padding: 50px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: $font-logo;
+      @include font-size(60px);
+      @include screen-small {
+        border-bottom: solid 1px $text-grey-color;
+      }
+      @include screen-medium {
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px $text-grey-color;
+        float: none;
+      }
+      @include screen-large {
+        float: left;
+        width: 30%;
+        border: none;
+        border-right: solid 1px $text-grey-color;
+      }
+    }
+    .remius-info {
+      padding: 50px 30px;
+      @include font-size(18px);
+      line-height: 24px;
+      .remius-text {
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+      @include screen-medium {
+        width: 100%;
+        float: none;
+      }
+      @include screen-large {
+        float: left;
+        width: 70%;
+        border: none;
+      }
+    }
+  } 
+}
+
+#remius-info {
+  .box-wrap {
+    display: table;
+    width: 100%;
+    .box {
+      background: $black-color;
+      padding: 25px;
+      @include screen-small {
+        width: 100%;
+        margin-top: 0;
+      }
+      @include screen-medium {
+        width: 80%;
+        margin: auto;
+        margin-top: 0;
+        float: none;
+        display: block;
+      }
+      @include screen-large {
+        width: 33%;
+        float: left;
+        margin-top: 40px;
+      }
+      text-align: center;
+      &.box-center {
+        margin-top: 0;
+        padding: 40px 35px;
+        background: #bbbbbb;
+        color: $black-color;
+        .box-title {
+          color: $black-color;
+        }
+        .btn-outline {
+          border-color: $black-color;
+          color: $black-color;
+          @include font-size(18px);
+          padding: 20px 30px;
+          &:hover {
+            background: $black-color!important;
+            color: $white-color!important;
+          }
+        }
+      }
+      .box-title {
+        font-weight: 400;
+        margin: 20px 0;
+        color: $white-color;
+        text-transform: uppercase;
+        @include font-size(18px);
+        margin-bottom: 30px;
+      }
+      .box-image {
+        max-width: 375px;
+        width: 100%;
+        height: 250px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      .box-info {
+        @include font-size(16px);
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+#news-carousel {
+  background-color: #151619;
+  .title-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+    .title {
+      @include font-size(40px);
+      text-transform: uppercase;
+      color: $text-grey-color;
+    }
+  }
+  .box-news-wrap {
+    width: 100%;
+    color: $white-color;
+    .carousel {
+      padding-bottom: 60px; 
+      display: table-cell;
+      vertical-align: middle;
+      .carousel-inner {
+        width: 80%;
+        margin: auto;
+        .box-news {
+          padding: 40px;
+          .news-title {
+            @include font-size(22px);
+            font-weight: 500;
+          }
+          .lead {
+            @include font-size(14px);
+            font-weight: 300;
+            margin-bottom: 40px;
+          }
+          .text-news {
+            @include font-size(18px);
+            font-weight: 100px;
+            margin-bottom: 40px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+    .carousel-indicators {
+      bottom: 0px;
+      li {
+        @include border-radius(50% !important);
+        width: 14px;
+        height: 14px;
+        border: none;
+        background: #2a2b2e;
+        &.active {
+          width: 14px;
+          height: 14px;
+          background: #ffffff;
+        }
+      }
+    }
+    .carousel-control {
+      background: none!important;
+    }
+  } 
+}
+
+#contacto {
+  background-image: url("/images/bg-contacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+  .title-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+    .title {
+      @include font-size(40px);
+      text-transform: uppercase;
+      color: $text-grey-color;
+    }
+  }
+  .container {
+    padding: 120px 80px;
+    background: $black-color;
+    .box {
+      .title {
+        font-weight: 400;
+        @include font-size(18px);
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 20px;
+      }
+      &.box-form {
+        label {
+          color: $white-color;
+          font-weight: 400;
+        }
+        input[type="text"], input[type="email"], textarea {
+          border: solid 1px $white-color;
+          background: transparent;
+          padding: 15px;
+          color: $white-color;
+        }
+        textarea {
+          height: 220px;
+          resize: none;
+        }
+        .has-error .form-control {
+          border-color: #a94442;
+        }
+      }
+      &.box-address {
+        background: $black-color-over;
+        padding: 20px;
+        color: $white-color;
+        margin-bottom: 40px;
+        @include font-size(14px);
+        ul {
+          list-style-type: none;
+          padding-left: 10px;
+          li {
+            margin-bottom: 15px;
+            &.social {
+              width: 49%;
+              display: inline-block;
+              text-align: center;
+              @include font-size(18px);
+            }
+            i {
+              margin-right: 10px;
+              display: inline-block;
+            }
+            a {
+              color: $text-grey-color;
+              font-weight: 700;
+              &:hover {
+                color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include screen-medium {
+      width: 100%;
+    }
+    @include screen-large {
+      width: 80%;
+    }
+  }
+}
+
+#googleMap {
+  position: relative;
+  height: 450px;
+  width: 100%; 
+  #googlemaps { 
+    height: 100%; 
+    width: 100%; 
+    position:absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  }
+}
+
+/* End Section home */

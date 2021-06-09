@@ -1,0 +1,69 @@
+.app-aula .aula-items-wrap {
+  padding-top: 30px;
+}
+.app-aula .panel {
+  padding: 10px;
+  margin-bottom: 0;
+}
+.app-aula .blocks > li {
+  margin-bottom: 30px;
+}
+.app-aula .blocks > li .panel {
+  text-align: center;
+  display: block;
+  padding: 40px 0;
+}
+.app-aula .blocks > li .panel:hover {
+  text-decoration: none;
+}
+.app-aula .blocks > li .panel * {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: .8 ;
+}
+.app-aula .blocks > li .panel i.icon {
+  margin: 0;
+  font-size: 52px;
+}
+.app-aula .blocks > li .panel:hover * {
+    opacity: 1;
+}
+.app-aula .overlay {
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.overlay-hover:not(:hover) .overlay-panel:not(.overlay-background-fixed) {
+  opacity: 0.7;
+}
+.app-aula .estado {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9;
+}
+.app-aula .overlay .btn-group {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.app-aula .overlay .btn-icon {
+  color: #bdbdbd;
+}
+.app-aula .overlay .btn-icon:hover {
+  color: white;
+}
+.app-aula .overlay .project-button {
+  color: white;
+}
+.app-aula .overlay .project-button:hover {
+  background-color: white;
+  color: #526069;
+}
+.app-aula .overlay-panel {
+  background: rgba(38, 50, 56, 0.8);
+}

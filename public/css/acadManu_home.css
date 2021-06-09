@@ -1,0 +1,327 @@
+/*!
+ * ================================================================================
+ * ================================================================================
+ * Document acadManu_home.css revision 1.0.1 by rperez@dpicode.com for Dpicode
+ * Last Change 12/02/2015 - 9:40
+ * ================================================================================
+ * ================================================================================
+ * 
+ */
+/* START PAGE STYLES */
+/* Section home */
+#cover {
+  background: url("/images/bg-cover.jpg") no-repeat center center;
+  background-size: cover;
+  height: 650px; }
+  #cover .cover-wrap {
+    margin-top: 40px; }
+    #cover .cover-wrap .cover-content {
+      color: #444444;
+      text-transform: uppercase;
+      vertical-align: middle; }
+      @media only screen and (max-width: 767px) {
+        #cover .cover-wrap .cover-content {
+          width: 100%;
+          text-align: center; } }
+      @media only screen and (min-width: 768px) {
+        #cover .cover-wrap .cover-content {
+          width: 100%;
+          text-align: center; } }
+      @media only screen and (min-width: 992px) {
+        #cover .cover-wrap .cover-content {
+          width: 100%;
+          text-align: center; } }
+      #cover .cover-wrap .cover-content h2 {
+        font-size: 56px;
+        font-size: 5.6rem;
+        font-weight: 500;
+        margin-bottom: 10px; }
+      #cover .cover-wrap .cover-content h3 {
+        font-size: 26px;
+        font-size: 2.6rem;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 0;
+        margin-bottom: 20px; }
+      #cover .cover-wrap .cover-content .btn {
+        font-size: 18px;
+        font-size: 1.8rem;
+        padding: 15px 25px; }
+
+#info-box-2 .title {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+  font-size: 3rem;
+  margin-bottom: 25px;
+  color: #FFFFFF; }
+#info-box-2 .text {
+  line-height: 24px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-align: justify; }
+  #info-box-2 .text a {
+    color: #FFFFFF; }
+  #info-box-2 .text p {
+    margin-bottom: 25px; }
+
+#remius-resume {
+  background-image: url("/images/bg-remius.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 530px;
+  position: relative;
+  -webkit-box-shadow: inset 0px 4px 7px -1px black;
+  -moz-box-shadow: inset 0px 4px 7px -1px black;
+  box-shadow: inset 0px 4px 7px -1px black; }
+  #remius-resume .content-remius {
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    display: table; }
+    #remius-resume .content-remius .remius-logo {
+      padding: 50px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "Advent Pro", sans-serif;
+      font-size: 60px;
+      font-size: 6rem; }
+      @media only screen and (max-width: 767px) {
+        #remius-resume .content-remius .remius-logo {
+          border-bottom: solid 1px #c0bbbb; } }
+      @media only screen and (min-width: 768px) {
+        #remius-resume .content-remius .remius-logo {
+          width: 100%;
+          border: none;
+          border-bottom: solid 1px #c0bbbb;
+          float: none; } }
+      @media only screen and (min-width: 992px) {
+        #remius-resume .content-remius .remius-logo {
+          float: left;
+          width: 30%;
+          border: none;
+          border-right: solid 1px #c0bbbb; } }
+    #remius-resume .content-remius .remius-info {
+      padding: 50px 30px;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 24px; }
+      #remius-resume .content-remius .remius-info .remius-text {
+        margin-bottom: 30px;
+        text-align: justify; }
+      @media only screen and (min-width: 768px) {
+        #remius-resume .content-remius .remius-info {
+          width: 100%;
+          float: none; } }
+      @media only screen and (min-width: 992px) {
+        #remius-resume .content-remius .remius-info {
+          float: left;
+          width: 70%;
+          border: none; } }
+
+#remius-info .box-wrap {
+  display: table;
+  width: 100%; }
+  #remius-info .box-wrap .box {
+    background: #24272b;
+    padding: 25px;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      #remius-info .box-wrap .box {
+        width: 100%;
+        margin-top: 0; } }
+    @media only screen and (min-width: 768px) {
+      #remius-info .box-wrap .box {
+        width: 80%;
+        margin: auto;
+        margin-top: 0;
+        float: none;
+        display: block; } }
+    @media only screen and (min-width: 992px) {
+      #remius-info .box-wrap .box {
+        width: 33%;
+        float: left;
+        margin-top: 40px; } }
+    #remius-info .box-wrap .box.box-center {
+      margin-top: 0;
+      padding: 40px 35px;
+      background: #bbbbbb;
+      color: #24272b; }
+      #remius-info .box-wrap .box.box-center .box-title {
+        color: #24272b; }
+      #remius-info .box-wrap .box.box-center .btn-outline {
+        border-color: #24272b;
+        color: #24272b;
+        font-size: 18px;
+        font-size: 1.8rem;
+        padding: 20px 30px; }
+        #remius-info .box-wrap .box.box-center .btn-outline:hover {
+          background: #24272b !important;
+          color: #FFFFFF !important; }
+    #remius-info .box-wrap .box .box-title {
+      font-weight: 400;
+      margin: 20px 0;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin-bottom: 30px; }
+    #remius-info .box-wrap .box .box-image {
+      max-width: 375px;
+      width: 100%;
+      height: 250px;
+      display: block;
+      margin: auto;
+      margin-bottom: 20px; }
+      #remius-info .box-wrap .box .box-image img {
+        width: 100%; }
+    #remius-info .box-wrap .box .box-info {
+      font-size: 16px;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      text-align: justify; }
+
+#news-carousel {
+  background-color: #151619; }
+  #news-carousel .title-wrap {
+    text-align: center;
+    margin-bottom: 40px; }
+    #news-carousel .title-wrap .title {
+      font-size: 40px;
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: #c0bbbb; }
+  #news-carousel .box-news-wrap {
+    width: 100%;
+    color: #FFFFFF; }
+    #news-carousel .box-news-wrap .carousel {
+      padding-bottom: 60px;
+      display: table-cell;
+      vertical-align: middle; }
+      #news-carousel .box-news-wrap .carousel .carousel-inner {
+        width: 80%;
+        margin: auto; }
+        #news-carousel .box-news-wrap .carousel .carousel-inner .box-news {
+          padding: 40px; }
+          #news-carousel .box-news-wrap .carousel .carousel-inner .box-news .news-title {
+            font-size: 22px;
+            font-size: 2.2rem;
+            font-weight: 500; }
+          #news-carousel .box-news-wrap .carousel .carousel-inner .box-news .lead {
+            font-size: 14px;
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 40px; }
+          #news-carousel .box-news-wrap .carousel .carousel-inner .box-news .text-news {
+            font-size: 18px;
+            font-size: 1.8rem;
+            font-weight: 100px;
+            margin-bottom: 40px;
+            text-align: justify; }
+    #news-carousel .box-news-wrap .carousel-indicators {
+      bottom: 0px; }
+      #news-carousel .box-news-wrap .carousel-indicators li {
+        -webkit-border-radius: 50% !important;
+        -moz-border-radius: 50% !important;
+        -ms-border-radius: 50% !important;
+        border-radius: 50% !important;
+        width: 14px;
+        height: 14px;
+        border: none;
+        background: #2a2b2e; }
+        #news-carousel .box-news-wrap .carousel-indicators li.active {
+          width: 14px;
+          height: 14px;
+          background: #ffffff; }
+    #news-carousel .box-news-wrap .carousel-control {
+      background: none !important; }
+
+#contacto {
+  background-image: url("/images/bg-contacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0; }
+  #contacto .title-wrap {
+    text-align: center;
+    margin-bottom: 40px; }
+    #contacto .title-wrap .title {
+      font-size: 40px;
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: #c0bbbb; }
+  #contacto .container {
+    padding: 120px 80px;
+    background: #24272b; }
+    #contacto .container .box .title {
+      font-weight: 400;
+      font-size: 18px;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 20px; }
+    #contacto .container .box.box-form label {
+      color: #FFFFFF;
+      font-weight: 400; }
+    #contacto .container .box.box-form input[type="text"], #contacto .container .box.box-form input[type="email"], #contacto .container .box.box-form textarea {
+      border: solid 1px #FFFFFF;
+      background: transparent;
+      padding: 15px;
+      color: #FFFFFF; }
+    #contacto .container .box.box-form textarea {
+      height: 220px;
+      resize: none; }
+    #contacto .container .box.box-form .has-error .form-control {
+      border-color: #a94442; }
+    #contacto .container .box.box-address {
+      background: #222427;
+      padding: 20px;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      font-size: 14px;
+      font-size: 1.4rem; }
+      #contacto .container .box.box-address ul {
+        list-style-type: none;
+        padding-left: 10px; }
+        #contacto .container .box.box-address ul li {
+          margin-bottom: 15px; }
+          #contacto .container .box.box-address ul li.social {
+            width: 49%;
+            display: inline-block;
+            text-align: center;
+            font-size: 18px;
+            font-size: 1.8rem; }
+          #contacto .container .box.box-address ul li i {
+            margin-right: 10px;
+            display: inline-block; }
+          #contacto .container .box.box-address ul li a {
+            color: #c0bbbb;
+            font-weight: 700; }
+            #contacto .container .box.box-address ul li a:hover {
+              color: #FFFFFF; }
+    @media only screen and (min-width: 768px) {
+      #contacto .container {
+        width: 100%; } }
+    @media only screen and (min-width: 992px) {
+      #contacto .container {
+        width: 80%; } }
+
+#googleMap {
+  position: relative;
+  height: 450px;
+  width: 100%; }
+  #googleMap #googlemaps {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /* Set z-index to 0 as it will be on a layer below the contact form */ }
+
+/* End Section home */
+
+/*# sourceMappingURL=acadManu_home.css.map */

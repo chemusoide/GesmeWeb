@@ -1,0 +1,132 @@
+// MIXINS
+
+// // hide text
+@mixin hide-text {
+    overflow: hidden;
+    text-indent: -9000px;
+    display: block;
+}
+
+// // End hide text
+
+// // center element
+@mixin center-element {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+// // End center element
+
+// // Function border-radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// // Function border-radius
+@mixin box-sizing($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+    -moz-box-sizing: $box-sizing;
+    -ms-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+}
+
+// // End Function border-radius
+
+// // Function for responsive font size
+@function calculateRem($size) {
+    $remSize: $size / 10px;
+
+    @return $remSize * 1rem;
+}
+
+// // End Function for responsive font size
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// // End Function for responsive font size
+
+// // Transitions
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+// // End Transitions
+
+// // semi-transparent colors
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+// // End semi-transparent colors
+
+// // Cross browser opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+
+    $opacity-ie: $opacity * 100;
+
+    filter: alpha(opacity = $opacity-ie);
+
+    //IE8
+}
+
+// // End Cross browser opacity
+
+// box shadow mixin
+
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}
+
+// End box shadow mixin
+
+// // Media queries
+@mixin screen-x-large {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin screen-large {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin screen-medium {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screen-small {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin screen-x-small {
+    @media only screen and (max-width: 25em) {
+        @content;
+    }
+}
+
+// // End Media queries
+// END MIXINS

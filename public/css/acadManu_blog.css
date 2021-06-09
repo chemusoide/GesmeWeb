@@ -1,0 +1,142 @@
+/*!
+ * ================================================================================
+ * ================================================================================
+ * Document acadManu_blog.css revision 1.0.1 by rperez@dpicode.com for Dpicode
+ * Last Change 3/03/2016 - 9:57
+ * ================================================================================
+ * ================================================================================
+ * 
+ */
+/* START PAGE STYLES */
+#cover {
+  background: url("/images/bg-blog.jpg") no-repeat center center;
+  background-size: cover;
+  display: table;
+  width: 100%;
+  padding: 30px 0; }
+  #cover .cover-wrap {
+    margin-top: 40px;
+    display: table-cell;
+    vertical-align: middle; }
+    #cover .cover-wrap .cover-content {
+      color: #FFFFFF;
+      text-align: left;
+      text-transform: uppercase;
+      vertical-align: middle; }
+      #cover .cover-wrap .cover-content h2 {
+        font-size: 36px;
+        font-size: 3.6rem;
+        text-shadow: 1px 1px 5px #000000;
+        font-weight: 300;
+        margin-bottom: 10px;
+        display: block;
+        padding: 15px;
+        border-bottom: solid 1px #FFFFFF; }
+        #cover .cover-wrap .cover-content h2 strong {
+          font-weight: 700; }
+
+/* End Header */
+#page {
+  padding: 80px 0; }
+  #page .page-content {
+    background: #FFFFFF; }
+    #page .page-content .blog-post-list .blog-post {
+      padding-bottom: 45px;
+      margin-bottom: 45px;
+      border-bottom: 1px solid #e5e5e5;
+      display: table;
+      width: 100%; }
+      #page .page-content .blog-post-list .blog-post .post-image {
+        margin-bottom: 25px; }
+        #page .page-content .blog-post-list .blog-post .post-image img {
+          display: inline-block;
+          max-width: 100%;
+          height: auto; }
+      #page .page-content .blog-post-list .blog-post .post-title {
+        font-weight: 500;
+        font-size: 22px;
+        font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 2px;
+        text-transform: uppercase; }
+      #page .page-content .blog-post-list .blog-post .post-date {
+        color: #666666;
+        font-size: 12px;
+        font-size: 1.2rem; }
+      #page .page-content .blog-post-list .blog-post .post-text {
+        font-size: 16px;
+        font-size: 1.6rem;
+        text-align: justify; }
+        #page .page-content .blog-post-list .blog-post .post-text p {
+          color: #666;
+          margin: 0 0 15px 0; }
+      #page .page-content .blog-post-list .blog-post .post-actions {
+        text-align: left; }
+        #page .page-content .blog-post-list .blog-post .post-actions a {
+          display: inline-block; }
+    #page .page-content .blog-post-list .pagination {
+      margin: 20px auto;
+      display: table; }
+      #page .page-content .blog-post-list .pagination li > a, #page .page-content .blog-post-list .pagination li > span {
+        border-radius: 4px !important;
+        margin: 0 5px; }
+
+#remius-resume {
+  padding: 40px 0;
+  background-image: url("/images/bg-remius.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: auto;
+  position: relative;
+  -webkit-box-shadow: inset 0px 4px 7px -1px black;
+  -moz-box-shadow: inset 0px 4px 7px -1px black;
+  box-shadow: inset 0px 4px 7px -1px black; }
+  #remius-resume .content-remius {
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    display: table; }
+    #remius-resume .content-remius .remius-logo {
+      padding: 50px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "Advent Pro", sans-serif;
+      font-size: 60px;
+      font-size: 6rem; }
+      @media only screen and (max-width: 767px) {
+        #remius-resume .content-remius .remius-logo {
+          border-bottom: solid 1px #c0bbbb; } }
+      @media only screen and (min-width: 768px) {
+        #remius-resume .content-remius .remius-logo {
+          width: 100%;
+          border: none;
+          border-bottom: solid 1px #c0bbbb;
+          float: none; } }
+      @media only screen and (min-width: 992px) {
+        #remius-resume .content-remius .remius-logo {
+          float: left;
+          width: 30%;
+          border: none;
+          border-right: solid 1px #c0bbbb; } }
+    #remius-resume .content-remius .remius-info {
+      padding: 50px 30px;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 24px; }
+      #remius-resume .content-remius .remius-info .remius-text {
+        margin-bottom: 30px;
+        text-align: justify center; }
+      @media only screen and (min-width: 768px) {
+        #remius-resume .content-remius .remius-info {
+          width: 100%;
+          float: none; } }
+      @media only screen and (min-width: 992px) {
+        #remius-resume .content-remius .remius-info {
+          float: left;
+          width: 70%;
+          border: none; } }
+
+/* End Section Hotels */
+
+/*# sourceMappingURL=acadManu_blog.css.map */
